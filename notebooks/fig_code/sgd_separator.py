@@ -7,7 +7,6 @@ def plot_sgd_separator():
     # we create 50 separable points
     X, Y = make_blobs(n_samples=50, centers=2,
                       random_state=0, cluster_std=0.60)
-
     # fit the model
     clf = SGDClassifier(loss="hinge", alpha=0.01,
                         n_iter=200, fit_intercept=True)
@@ -22,7 +21,7 @@ def plot_sgd_separator():
     for (i, j), val in np.ndenumerate(X1):
         x1 = val
         x2 = X2[i, j]
-        p = clf.decision_function([x1, x2])
+        p = clf.decision_function([[x1, x2]])
         Z[i, j] = p[0]
     levels = [-1.0, 0.0, 1.0]
     linestyles = ['dashed', 'solid', 'dashed']
