@@ -1,10 +1,6 @@
 # Scikit-learn Tutorial
 
-*Jake VanderPlas*
-
-- email: <jakevdp@uw.edu>
-- twitter: [@jakevdp](https://twitter.com/jakevdp)
-- github: [jakevdp](http://github.com/jakevdp)
+Tutorial strongly inspired from the Jake VanderPlas' one at https://github.com/jakevdp/sklearn_tutorial.
 
 This repository contains notebooks and other files associated with my
 [Scikit-learn](http://scikit-learn.org) tutorial.
